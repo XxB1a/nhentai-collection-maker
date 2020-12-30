@@ -4,6 +4,7 @@
 # 'hentai' module found on PyPi.
 # For installing, use 'pip install hentai'
 # pypi.org/project/hentai
+
 from sys import argv as argument
 from hentai import Utils
 
@@ -14,6 +15,7 @@ def d_h(hentais = None):
         try:
             print(f'Downloading {hentai}')
             hentai.download()
+            
         except:
             print(f'Downloading hentai FAILED!')
 
@@ -21,6 +23,7 @@ def d_h(hentais = None):
         try:
             print(f'#{hentais} | Downloading {hentai}')
             hentai.download()
+            
         except:
             print(f'Downloading hentai #{hentais} FAILED')
 
