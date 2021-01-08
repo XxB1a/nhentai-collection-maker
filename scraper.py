@@ -1,6 +1,3 @@
-# nHentai collection maker by Bianca
-# Inspired by RedMemz
-
 # 'hentai' module found on PyPi.
 # For installing, use 'pip install hentai'
 # pypi.org/project/hentai
