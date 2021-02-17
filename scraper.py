@@ -5,6 +5,7 @@
 from sys import argv as argument
 from hentai import Utils
 
+hentais = 0
 def d_h(hentais = None):
     hentai = Utils.get_random_hentai()
 
@@ -28,14 +29,14 @@ if argument[1] == None or argument[1] == 'I' or argument[1] == 'i':
     hentais = 0
 
     while True:
-        hentais = hentais + 1
+        hentais += 1
         d_h(hentais)
 
 elif argument[1] == 'l' or argument[1] == 'l':
     hentais = 0
 
     for range in range(int(argument[2])):
-        hentais = hentais + 1
+        hentais += 1
         d_h(hentais)
 
 else:
@@ -45,14 +46,14 @@ else:
         hentais = 0
 
         while True:
-            hentais = hentais + 1
+            hentais += 1
             d_h(hentais)
 
     elif r == 'L' or r == 'l':
         r = int(input('How much random nhentai do you need?: '))
 
         for i in range(int(r)):
-            hentais = hentais + 1
+            hentais += 1
             d_h(hentais)
 
     else:
